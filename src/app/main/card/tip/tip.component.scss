@@ -1,0 +1,21 @@
+@import "../../../../styles/styles.scss";
+.container {
+  font-family: "Space Mono", monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .container__label {
+    color: $dark-grayish-Cyan;
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .container__input {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 0.7rem;
+  
+    
+  }
+}

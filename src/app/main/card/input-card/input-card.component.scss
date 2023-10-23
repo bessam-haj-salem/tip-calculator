@@ -1,42 +1,39 @@
-@import '../../../../styles/styles.scss';
+@import "../../../../styles/styles.scss";
 .container {
-  // display: flex;
-  // flex-direction: column;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 
   .container__label {
     color: $dark-grayish-Cyan;
-    font-size: 0.7rem ;
+    font-size: 0.7rem;
     margin-bottom: 0.3rem;
   }
 
   .container__input {
-    border: solid 1px red;
+    position: relative;
+    color: $dark-grayish-Cyan;
     .label__input {
-      background-color: $very-light-grayish-Cyan ;
-      font-size: 1.3rem;
+      background-color: $very-light-grayish-Cyan;
+      font-size: 0.9rem;
       color: $very-dark-Cyan;
       border: 0.15rem solid transparent;
+      font-family: "Space Mono", monospace;
       border-radius: 0.4rem;
-      // padding-left: 25px;
-      // background: url(../../../../assets/images/dollar.png) no-repeat left;
-      // background-size: 11px;
       outline: none;
       direction: rtl;
       font-weight: bold;
+      height: 2rem;
       width: 100%;
+      padding: 0.3rem;
     }
     .label__input:focus {
       border: 0.15rem solid $strong-Cyan;
-  
     }
     .label__img {
-      position: relative;
-      width: 14px;
-      height: 15px;
-      top: 39px;
+      position: absolute;
+      width: 12px;
+      height: 17px;
+      top: 14px;
       left: 13px;
     }
   }
- 
 }

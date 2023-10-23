@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tip.component.scss']
 })
 export class TipComponent {
-
+numbers = ["10%","20%","30%","40%", "50%","Custom"]
 }
