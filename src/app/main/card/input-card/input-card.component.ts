@@ -7,5 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class InputCardComponent {
   @Input() label: string ="";
+  @Input() img: string ="";
+
 
 }

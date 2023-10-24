@@ -1,5 +1,19 @@
 @import "../../styles/styles.scss";
 
-.container__interface {
+@media (min-width: 850px ) {
+  .container__interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .card {
+    width: 50%;
+  }
+  .options {
+    width: 50%;
+    height: 100%;
 
+  }
 }
+

@@ -19,9 +19,18 @@
       margin: 0 auto;
       padding: 0.7rem;
       height: 78vh;
-      width: 45vh;
+      max-width: 45vh;
       background-color: $white;
       border-radius: 15px;
+    }
+    @media (min-width: 850px ) {
+      .container__card {
+        margin: 0 auto;
+        height: 45vh;
+        max-width: 78vh;
+      padding: 1rem;
+
+      }
     }
   }
   .footer {
