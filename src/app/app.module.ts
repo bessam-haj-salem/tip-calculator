@@ -11,6 +11,7 @@ import { FooterComponent } from './main/footer/footer.component';
 import { TipComponent } from './main/card/tip/tip.component';
 import { InputCardComponent } from './main/card/input-card/input-card.component';
 import { SmallButtonComponent } from './main/card/tip/small-button/small-button.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { SmallButtonComponent } from './main/card/tip/small-button/small-button.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

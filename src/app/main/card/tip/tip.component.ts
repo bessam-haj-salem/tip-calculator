@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TipComponent {
 numbers = ["10%","20%","30%","40%", "50%","Custom"]
+
+
 }

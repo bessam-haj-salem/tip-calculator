@@ -4,15 +4,23 @@
       <div class="label__amount">Tip Amount</div>
       <div class="person">/ person</div>
     </div>
-    <div class="price">$0</div>
+    <div class="price" *ngIf="tipAmount$ | async as result; else default">
+      {{ "$" + result }}
+    </div>
   </div>
   <div class="amount">
     <div class="label">
       <div class="label__amount">Total</div>
-      <div class="person">/ person</div>
+      <div class="person">/ all persons</div>
     </div>
-    <div class="price">$0</div>
+    <div class="price" *ngIf="total$ | async as total; else defaultTotal">{{ "$" + (total | number : '1.2' ) }}</div>
   </div>
-  <div class="btn">reset</div>
-
+  <div class="btn" (click)="reset()">reset</div>
 </div>
+
+<ng-template #default>
+  <div class="price">$0</div>
+</ng-template>
+<ng-template #defaultTotal>
+  <div class="price">$0</div>
+</ng-template>
